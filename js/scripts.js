@@ -1,7 +1,7 @@
-const navbar = document.querySelector(".navbar");
+const navbar = document.querySelector(".navegacion");
 const homebg = document.querySelector(".home__background");
-const menu = document.querySelector(".navbar__menu");
-const links = document.querySelector(".navbar__links");
+const menu = document.querySelector(".navegacion__menu");
+const links = document.querySelector(".navegacion__links");
 const sections = document.querySelectorAll("section");
 const config = {
   rootMargin: "0px",
@@ -36,9 +36,9 @@ sections.forEach((section) => {
 
 function intersectionHandler(entry) {
   const id = entry.target.id;
-  const currentlyActive = document.querySelector(".navbar__links  .active");
+  const currentlyActive = document.querySelector(".navegacion__links  .active");
   const shouldBeActive = document.querySelector(
-    ".navbar__links [data-ref=" + id + "]"
+    ".navegacion__links [data-ref=" + id + "]"
   );
 
   if (currentlyActive) {
